@@ -6,4 +6,4 @@ module.exports=router;
 
 router.get('/',mainController.showHome);
 router.get('/events',eventsController.showEvents);
-router.get('/events/:slug',eventsController.showSingle);
+//router.get('/events/:slug',eventsController.showSingle);
