@@ -10,7 +10,7 @@ app.use(express.static(__dirname+'/public'));
 app.use(expressLayouts);
 app.set('view engine','ejs');
 
-mongoose.connect(process.env.DB_URI);
+mongoose.connect(process.env.DB_URI || 'mongodb://localhost:27017/exampleDB');
 app.use(require('./app/routes'));
 
 app.listen(port,()=>{
