@@ -2,9 +2,8 @@ var mongoose=require('mongoose');
 var Schema=mongoose.Schema;
 
 var eventSchema=new Schema({
-  name:String,
-slug{
-type:string,
+  name:{
+type:String,
 unique:true
 },
 description:String
